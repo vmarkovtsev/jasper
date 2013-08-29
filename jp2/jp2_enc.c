@@ -435,4 +435,5 @@ static int clrspctojp2(jas_clrspc_t clrspc)
 		abort();
 		break;
 	}
+	return 0;
 }

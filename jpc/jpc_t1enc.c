@@ -138,7 +138,8 @@ int jpc_enc_enccblks(jpc_enc_t *enc)
 				if (!band->data) {
 					continue;
 				}
-				for (prcno = 0, prc = band->prcs; prcno < lvl->numprcs; ++prcno, ++prc) {
+				for (prcno = 0, prc = band->prcs; prcno < (uint_fast32_t)lvl->numprcs;
+				     ++prcno, ++prc) {
 					if (!prc->cblks) {
 						continue;
 					}
